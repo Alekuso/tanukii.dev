@@ -1,0 +1,12 @@
+# Prettier ignore patterns
+node_modules
+.svelte-kit
+build
+.output
+.vercel
+.netlify
+.wrangler
+dist
+*.md
+package-lock.json
+pnpm-lock.yaml

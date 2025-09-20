@@ -1,0 +1,71 @@
+@import 'tailwindcss';
+
+:root {
+	--radius: 0.5rem;
+}
+
+.dark {
+	color-scheme: dark;
+}
+
+@layer base {
+	* {
+		@apply border-amber-900/30 outline-orange-500/50;
+	}
+
+	body {
+		@apply bg-stone-950 text-amber-50 font-sans antialiased;
+	}
+}
+
+@layer utilities {
+	.glass {
+		backdrop-filter: blur(20px);
+		background: rgba(28, 25, 23, 0.1);
+		border: 1px solid rgba(120, 113, 108, 0.2);
+	}
+
+	.glass-strong {
+		backdrop-filter: blur(40px);
+		background: rgba(28, 25, 23, 0.15);
+		border: 1px solid rgba(120, 113, 108, 0.3);
+	}
+
+	.animate-float {
+		animation: float 6s ease-in-out infinite;
+	}
+
+	.animate-float-delayed {
+		animation: float 6s ease-in-out infinite 2s;
+	}
+
+	.animate-fade-in {
+		animation: fadeIn 2s ease-out forwards;
+		opacity: 0;
+	}
+
+	@keyframes float {
+		0%,
+		100% {
+			transform: translateY(0px);
+		}
+		50% {
+			transform: translateY(-20px);
+		}
+	}
+
+	@keyframes fadeIn {
+		0% {
+			opacity: 0;
+			transform: translateY(10px);
+		}
+		100% {
+			opacity: 1;
+			transform: translateY(0px);
+		}
+	}
+
+	.text-glow {
+		text-shadow: 0 0 20px rgba(251, 146, 60, 0.5);
+	}
+}
