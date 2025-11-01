@@ -4,9 +4,9 @@ export const bios = [
 	'Alekuso',
 	'Alekuso_',
 	'Rust lover',
-	"I don't use Arch btw",
 	'Non-binary',
-	'Werkloos waalse'
+	'Werkloos waalse',
+	'UwU',
 ];
 
 export function getRandomText(): string {
