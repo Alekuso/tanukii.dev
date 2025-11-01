@@ -6,7 +6,7 @@ export const bios = [
 	'Rust lover',
 	'Non-binary',
 	'Werkloos waalse',
-	'UwU',
+	'UwU'
 ];
 
 export function getRandomText(): string {
